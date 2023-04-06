@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Hatef Khodkar Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w & live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkhodkar/portfolio.git"
+  },
+  "author": "Hatef Khodkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkhodkar/portfolio/issues"
+  },
+  "homepage": "https://github.com/hkhodkar/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
