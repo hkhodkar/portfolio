@@ -5,6 +5,7 @@
 @import "./button";
 @import "./about";
 @import "./common";
+@import "./qualification";
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -39,7 +40,7 @@
   --font-medium: 500;
   --font-bold: 600;
 
-  /*===== Margenes Bottom =====*/
+  /*===== Margins Bottom =====*/
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
