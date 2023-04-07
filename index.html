@@ -12,6 +12,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- sidebar -->
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
@@ -49,6 +50,7 @@
       </nav>
     </aside>
 
+    <!-- home -->
     <main class="main">
       <section class="home" id="home">
         <div class="home__container container grid">
@@ -124,7 +126,49 @@
           </div>
         </div>
       </section>
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <h2 data-heading="My intro" class="section__title">About Me</h2>
+
+        <div class="about__container cintainer grid">
+          <img src="./assets/img/home-bg.jpg" alt="" class="about__img" />
+          <div class="about__data">
+            <h3 class="about__heading">Hi, I'm Hatef Khodkar, Based in Iran</h3>
+            <p class="about__description">
+              Web devoper, with extensive knowledge and yeras of exprience,
+              working in web technologies and JS Framework, delivering quality
+              work.
+            </p>
+
+            <div class="about__info grid">
+              <div class="about__box">
+                <i class="uil uil-award about__icon"></i>
+                <h3 class="about__title">Exprience</h3>
+                <span class="about__subtitle">4 + years</span>
+              </div>
+
+              <div class="about__box">
+                <i class="uil uil-suitcase-alt about__icon"></i>
+                <h3 class="about__title">Completed</h3>
+                <span class="about__subtitle">10 + Projects</span>
+              </div>
+
+              <div class="about__box">
+                <i class="uil uil-headphones-alt about__icon"></i>
+                <h3 class="about__title">Support</h3>
+                <span class="about__subtitle">Online 24/7</span>
+              </div>
+            </div>
+            <a href="#contact" class="button">
+              <i class="uil uil-navigator button__icon"></i>
+              Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>
