@@ -39,3 +39,31 @@ function activeWOrk() {
 }
 
 linkwork.forEach(l => l.addEventListener('click', activeWOrk));
+
+/*========== work popup ===========*/
+document.addEventListener('click', e => {
+  if (e.target.classList.contains('work__button')) {
+    togglePortfolioPopup();
+    portfolioItemDetails(e.target.parentElement);
+  }
+});
+
+function togglePortfolioPopup() {
+  document.querySelector('.portfolio__popup').classList.toggle('open');
+}
+
+document
+  .querySelector('.portfolio__popup-close')
+  .addEventListener('click', togglePortfolioPopup);
+
+function portfolioItemDetails(portFolioItem) {
+  console.log(portFolioItem);
+  document.querySelector('.pp__thumbnail img').src =
+    portFolioItem.querySelector('.work__img').src;
+
+  document.querySelector('.portfolio__popup-subtitle span').innerHTML =
+    portFolioItem.querySelector('.work__title').innerHTML;
+
+  document.querySelector('.portfolio__popup-body').innerHTML =
+    portFolioItem.querySelector('.portfolio__items-details').innerHTML;
+}
