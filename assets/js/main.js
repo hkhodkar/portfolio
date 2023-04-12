@@ -129,3 +129,27 @@ inputs.forEach(input => {
   input.addEventListener('focus', focusFunc);
   input.addEventListener('blur', blurFunc);
 });
+
+/*========== Scroll to top ===========*/
+const sections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', navHightLighter);
+
+function navHightLighter() {
+  //get current scroll position
+  let scrollY = window.pageYOffset;
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute('id');
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector('.nav__menu a[href*=' + sectionId + ']')
+        .classList.add('active-link');
+    } else {
+      document
+        .querySelector('.nav__menu a[href*=' + sectionId + ']')
+        .classList.remove('active-link');
+    }
+  });
+}
