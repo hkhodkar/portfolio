@@ -397,6 +397,60 @@ input {
 .skills__active[data-content] {
   display: block; }
 
+.work__container {
+  grid-template-columns: repeat(3, 330px);
+  gap: 1.8rem;
+  justify-content: center;
+  padding-top: 1rem; }
+
+.work__item {
+  cursor: pointer;
+  color: var(--text-color);
+  padding: .2rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem; }
+
+.work__card {
+  background-color: var(--box-color);
+  padding: 1.25rem;
+  border-radius: .5rem; }
+
+.work__img {
+  border-radius: 5rem;
+  margin-bottom: var(--mb-1); }
+
+.work__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5); }
+
+.work__button {
+  color: var(--skin-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  cursor: pointer; }
+  .work__button-icon {
+    font-size: 1rem;
+    transition: .3s; }
+  .work__button:hover .work__button-icon {
+    transform: translateX(0.25rem); }
+
+.works__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem; }
+
+.active-work {
+  background-color: var(--skin-color);
+  color: var(--title-color); }
+
+.portfolio__items-details {
+  display: none; }
+
 /*=============== GOOGLE FONTS ===============*/
 /*=============== VARIABLES CSS ===============*/
 :root {
