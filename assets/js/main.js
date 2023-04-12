@@ -110,3 +110,22 @@ let swiper = new Swiper('.testimonials__container', {
     },
   },
 });
+
+/*========== Input Animation ===========*/
+const inputs = document.querySelectorAll('.input');
+function focusFunc() {
+  let node = this.parentNode;
+  node.classList.add('focus');
+}
+
+function blurFunc() {
+  let node = this.parentNode;
+  if (this.value == '') {
+    node.classList.remove('focus');
+  }
+}
+
+inputs.forEach(input => {
+  input.addEventListener('focus', focusFunc);
+  input.addEventListener('blur', blurFunc);
+});
