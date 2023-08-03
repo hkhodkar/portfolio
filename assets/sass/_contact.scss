@@ -86,7 +86,7 @@
             font-size: 1rem;
             font-weight: var(--font-medium);
             pointer-events: none;
-            z-index: 1000;
+            z-index: var(--z-modal);
             transition: .5s;
         }
 
@@ -103,7 +103,7 @@
             font-size: var(--small-font-size);
             padding: 0 .4rem;
             pointer-events: none;
-            z-index: 500;
+            z-index: 15;
             color: transparent;
 
             &::before,

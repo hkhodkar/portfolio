@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href='assets/css/styles.css' />
   <title>Document</title>
 </head>
 
 <body>
   <!-- sidebar -->
+  <div class="nav__toggle" id="nav-toggle">
+    <i class="uil uil-bars"></i>
+  </div>
   <aside class="sidebar" id="sidebar">
     <nav class="nav">
       <div class="nav__logo">
@@ -47,6 +50,10 @@
 
       <div class="btn__share">
         <i class="uil uil-share-alt social__share"></i>
+      </div>
+
+      <div class="nav__close" id="nav-close">
+        <i class="uil uil-times"></i>
       </div>
     </nav>
   </aside>
@@ -828,25 +835,25 @@
           <form action="" class="contact__form">
             <div class="input__container">
               <input type="text" class="input">
-              <label for="">Username</label>
+              <label>Username</label>
               <span>Username</span>
             </div>
 
             <div class="input__container">
               <input type="email" class="input">
-              <label for="">Email</label>
+              <label>Email</label>
               <span>Email</span>
             </div>
 
             <div class="input__container">
               <input type="tel" class="input">
-              <label for="">Phone</label>
+              <label>Phone</label>
               <span>Phone</span>
             </div>
 
             <div class="input__container textarea">
               <textarea class="input"></textarea>
-              <label for="">Message</label>
+              <label>Message</label>
               <span>Message</span>
             </div>
             <button type="submit" class="button">
@@ -864,11 +871,6 @@
     <footer class="footer">
       <div class="footer__bg">
         <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Hatef</h1>
-            <span class="footer__subtitle">Frontend developer</span>
-          </div>
-
           <ul class="footer__links">
             <li>
               <a href="#services" class="footer__link">Services</a>

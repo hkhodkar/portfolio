@@ -90,16 +90,383 @@
 
 /*========== BREAKPOINTS ==========*/
 /* For Large Devices */
-@media screen and (max-width: 1408px) {}
+@media screen and (max-width: 1408px) {
+  .container {
+    margin-left: var(--mb-2-5);
+    margin-right: var(--mb-2-5);
+  }
+}
 
-@media screen and (max-width: 1216px) {}
+@media screen and (max-width: 1216px) {
+  .about {
+    &__container {
+      column-gap: 2.5rem;
+    }
 
-@media screen and (max-width: 1024px) {}
+    &__description {
+      padding-right: 0;
+    }
+  }
+
+  .work {
+    &__container {
+      grid-template-columns: repeat(2, 330px);
+      gap: 2.5rem;
+    }
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 220px);
+  }
+
+  .testimonial__card {
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-right: var(--mb-1-5);
+    margin-left: var(--mb-1-5);
+  }
+
+  .sidebar {
+    width: 100%;
+    z-index: 999;
+    transform: translateX(-100%);
+  }
+
+  .show-sidebar {
+    transform: translateX(0);
+  }
+
+  .nav__logo,
+  .btn__share {
+    display: none;
+  }
+
+  .nav {
+    &__menu {
+      height: 100%;
+      width: 100%;
+      transform: rotate(0deg) translateX(0);
+      display: flex;
+      justify-content: center;
+    }
+
+    &__list {
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link {
+      padding: 1rem 0;
+      line-height: 1.5rem;
+
+      &:hover::after,
+      &.active-link::after {
+        bottom: 0;
+      }
+    }
+
+    &__close {
+      display: block;
+    }
+
+    &__toggle {
+      display: flex;
+
+    }
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .about {
+
+    &__container {
+      grid-template-columns: 1fr;
+      row-gap: 2.5rem;
+    }
+
+    &__img {
+      width: 350px;
+    }
+
+    &__data {
+      text-align: center;
+    }
+
+    &__info {
+      justify-content: center;
+    }
+
+    &__box {
+      padding: .75rem .5rem;
+    }
+
+    &__description {
+      padding: 0 4rem;
+      text-align: center;
+    }
+  }
+
+  .qualification {
+    &__container {
+      grid-template-columns: repeat(2, 290px);
+    }
+  }
+
+  .skills {
+    &__container {
+      grid-template-columns: 340px 300px;
+    }
+
+    &__list {
+      row-gap: 1.7rem;
+    }
+  }
+
+  .work {
+    &__card {
+      padding: 1rem;
+    }
+
+    &__img {
+      margin-bottom: var(--mb-0-75);
+    }
+
+    &__title {
+      margin-bottom: var(--mb-0-25);
+    }
+  }
+}
 
 /* For Medium Devices */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .about__img {
+    width: 250px;
+  }
 
-@media screen and (max-width: 576px) {}
+  .qualification__container {
+    grid-template-columns: 290px;
+    row-gap: 3rem;
+  }
+
+  .skills__container {
+    grid-template-columns: 300px;
+    row-gap: 3rem;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services__content {
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+  }
+
+  .services__icon {
+    font-size: 1.5rem;
+  }
+
+  .services__container {
+    grid-template-columns: 360px;
+    row-gap: 3rem;
+  }
+
+  .footer {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+    }
+
+    &__social {
+      justify-self: center;
+    }
+
+    &__links {
+      flex-direction: column;
+      row-gap: 1.5rem;
+    }
+
+    &__bg {
+      padding: 2rem 0 3rem;
+    }
+
+    &__copy {
+      margin-top: var(--mb-3);
+    }
+  }
+
+  .portfolio {
+    &__popup {
+      &-inner {
+        width: 420px;
+        padding: 2.8rem 1.5rem 2.5rem;
+
+      }
+
+      &-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+      }
+
+      &-close {
+        top: .5rem;
+      }
+    }
+  }
+
+  .details__title {
+    font-size: var(--normal-font-size);
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    &__toggle {
+      right: initial;
+      left: 1.5rem;
+    }
+  }
+  .home {
+    background-image: none;
+    height: initial;
+    align-items: initial;
+    padding: 7rem 0 2rem;
+
+    &__container {
+      row-gap: 2rem;
+    }
+
+    &__img {
+      display: block;
+      width: 250px;
+      justify-self: center;
+    }
+
+    &__social {
+      left: initial;
+      right: -1rem;
+      flex-direction: column;
+      row-gap: 3.5rem;
+
+      &-follow {
+        font-size: var(--smaller-font-size);
+        transform: rotate(90deg);
+      }
+
+      &-links {
+        flex-direction: column;
+        row-gap: .25rem;
+      }
+
+      &-link {
+        font-size: var(--normal-font-size);
+      }
+    }
+  }
+
+  .about {
+    &__info {
+      grid-template-columns: repeat(3,1fr);
+    }
+
+    &__description {
+      padding: 0;
+    }
+  }
+
+  .services__modal{
+    &-content {
+      padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    &-description {
+      padding: 0 ;
+    }
+  }
+
+  .contact__container,
+  .work__container {
+    grid-template-columns: 300px;
+  }
+
+  .footer{
+    &__container{
+      grid-template-columns: 1fr;
+    }
+
+    &__links {
+      justify-self: flex-start;
+    }
+  }
+
+  .my__info {
+    display: none;
+  }
+}
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .home {
+    &__img {
+      width: 200px ;
+    }
+
+    &__title {
+      font-size: var(--h1-font-size);
+    }
+
+    &__subtitle {
+      font-size: var(--normal-font-size);
+    }
+  }
+
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .5rem;
+  }
+
+  .contact__container,
+  .work__container,
+  .skills__container,
+  .qualification__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .work{
+    &__item {
+      font-size: var(--small-font-size);
+    }
+
+    &__filters {
+      column-gap: .25rem;
+    }
+  }
+
+  .services {
+    &__container {
+      grid-template-rows: max-content;
+    }
+
+    &__content {
+      padding-right: 3.5rem;
+    }
+  }
+}
