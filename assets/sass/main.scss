@@ -9,8 +9,6 @@
 @import "./skills";
 @import "./work";
 @import "./portfolio-popup";
-@import "./services";
-@import "./testimonial";
 @import './override';
 @import './contact';
 @import './footer';
@@ -115,12 +113,10 @@
     }
   }
 
-  .services__container {
-    grid-template-columns: repeat(3, 220px);
+  .contact__info {
+    grid-template-columns: repeat(2,minmax(auto, 300px));
   }
 
-  .testimonial__card {
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -265,18 +261,6 @@
     gap: 1.5rem;
   }
 
-  .services__content {
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
-  }
-
-  .services__icon {
-    font-size: 1.5rem;
-  }
-
-  .services__container {
-    grid-template-columns: 360px;
-    row-gap: 3rem;
-  }
 
   .footer {
     &__container {
@@ -382,19 +366,14 @@
     }
   }
 
-  .services__modal{
-    &-content {
-      padding: 4.5rem 1.5rem 2.5rem;
-    }
-
-    &-description {
-      padding: 0 ;
-    }
+  .contact__info {
+    grid-template-columns: repeat(1,minmax(auto, 300px));
   }
 
   .contact__container,
   .work__container {
     grid-template-columns: 300px;
+    justify-content: center;
   }
 
   .footer{
@@ -457,16 +436,6 @@
 
     &__filters {
       column-gap: .25rem;
-    }
-  }
-
-  .services {
-    &__container {
-      grid-template-rows: max-content;
-    }
-
-    &__content {
-      padding-right: 3.5rem;
     }
   }
 }

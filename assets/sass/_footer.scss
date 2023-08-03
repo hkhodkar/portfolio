@@ -11,29 +11,8 @@
         padding: 3rem 0 3.5rem;
     }
 
-    &__links {
-        display: flex;
-        justify-self: center;
-        column-gap: 2rem;
-
-
-    }
 
     &__link {
-        transition: .4s;
-
-        &:hover {
-            color: var(--skin-color);
-        }
-    }
-
-    &__socials {
-        justify-self: flex-end;
-    }
-
-    &__social {
-        font-size: 1.25rem;
-        margin-right: var(--mb-1-5);
         transition: .4s;
 
         &:hover {
@@ -44,13 +23,6 @@
     &__copy {
         font-size: var(--small-font-size);
         text-align: center;
-        margin-top: 4.5rem;
     }
 
-    &__title,
-    &__subtitle,
-    &__link,
-    &__social {
-        color: var(--title-color);
-    }
 }

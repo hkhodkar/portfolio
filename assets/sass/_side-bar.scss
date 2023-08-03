@@ -57,7 +57,7 @@
     position: fixed;
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: left top;
-    width: 100vw;
+    width: 50%;
   }
 
   &__list {
@@ -109,7 +109,7 @@
     color: var(--title-color);
     justify-content: center;
     align-items: center;
-    display: flex;
+    display: none;
     z-index: 15;
 
   }
