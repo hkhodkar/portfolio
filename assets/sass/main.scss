@@ -6,7 +6,6 @@
 @import "./about";
 @import "./common";
 @import "./qualification";
-@import "./skills";
 @import "./work";
 @import "./portfolio-popup";
 @import './override';
@@ -215,16 +214,6 @@
     }
   }
 
-  .skills {
-    &__container {
-      grid-template-columns: 340px 300px;
-    }
-
-    &__list {
-      row-gap: 1.7rem;
-    }
-  }
-
   .work {
     &__card {
       padding: 1rem;
@@ -248,11 +237,6 @@
 
   .qualification__container {
     grid-template-columns: 290px;
-    row-gap: 3rem;
-  }
-
-  .skills__container {
-    grid-template-columns: 300px;
     row-gap: 3rem;
   }
 
@@ -420,13 +404,8 @@
 
   .contact__container,
   .work__container,
-  .skills__container,
   .qualification__container {
     grid-template-columns: 1fr;
-  }
-
-  .skills__title {
-    font-size: var(--normal-font-size);
   }
 
   .work{

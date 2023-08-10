@@ -51,3 +51,8 @@ input {
   border: none;
   outline: none;
 }
+
+a, a:active {
+  color: var(--title-color);
+  text-decoration: underline;
+}

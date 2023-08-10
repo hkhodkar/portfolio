@@ -53,6 +53,11 @@ input {
   outline: none;
 }
 
+a, a:active {
+  color: var(--title-color);
+  text-decoration: underline;
+}
+
 .sidebar {
   position: fixed;
   width: 100px;
@@ -79,6 +84,7 @@ input {
   color: var(--title-color);
   font-weight: var(--font-bold);
   line-height: 40px;
+  text-decoration: none;
 }
 .nav__logo__toggle {
   height: 32px;
@@ -399,70 +405,6 @@ input {
   border-radius: 50%;
   background-color: var(--skin-color);
   transition: 0.4s;
-}
-
-.skills__container {
-  grid-template-columns: 360px 320px;
-  column-gap: 3rem;
-  justify-content: center;
-}
-.skills__header {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.skills__header:not(:last-child) {
-  margin-bottom: var(--mb-2-5);
-}
-.skills__icon, .skills__arrow {
-  font-size: 2rem;
-  color: var(--skin-color);
-}
-.skills__icon {
-  margin-right: var(--mb-0-75);
-}
-.skills__title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-.skills__subtitle {
-  font-size: var(--small-font-size);
-}
-.skills__arrow {
-  margin-left: auto;
-}
-.skills__list {
-  row-gap: 1.8rem;
-}
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-.skills__bar, .skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-.skills__bar {
-  background-color: var(--box-color);
-}
-.skills__percentage {
-  display: block;
-  background-color: var(--skin-color);
-}
-.skills__active .skills__arrow {
-  transform: rotate(-90deg);
-  transition: 0.3s;
-}
-.skills [data-content] {
-  display: none;
-}
-.skills__active[data-content] {
-  display: block;
 }
 
 .work__container {
@@ -824,12 +766,6 @@ input {
   .qualification__container {
     grid-template-columns: repeat(2, 290px);
   }
-  .skills__container {
-    grid-template-columns: 340px 300px;
-  }
-  .skills__list {
-    row-gap: 1.7rem;
-  }
   .work__card {
     padding: 1rem;
   }
@@ -847,10 +783,6 @@ input {
   }
   .qualification__container {
     grid-template-columns: 290px;
-    row-gap: 3rem;
-  }
-  .skills__container {
-    grid-template-columns: 300px;
     row-gap: 3rem;
   }
   .work__container {
@@ -970,12 +902,8 @@ input {
   }
   .contact__container,
   .work__container,
-  .skills__container,
   .qualification__container {
     grid-template-columns: 1fr;
-  }
-  .skills__title {
-    font-size: var(--normal-font-size);
   }
   .work__item {
     font-size: var(--small-font-size);
