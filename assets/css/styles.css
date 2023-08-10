@@ -53,7 +53,11 @@ input {
   outline: none;
 }
 
-a, a:active {
+.linkedIn-link {
+  color: var(--title-color);
+  text-decoration: underline;
+}
+.linkedIn-link:visited {
   color: var(--title-color);
   text-decoration: underline;
 }
