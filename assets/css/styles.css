@@ -26,7 +26,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--font-color);
+  color: var(--body-font);
   font-weight: var(--font-bold);
 }
 
@@ -235,7 +235,7 @@ input {
 }
 
 .info__title, .info__subtitle {
-  font-size: var(--smal-font-size);
+  font-size: var(--small-font-size);
 }
 .info__title {
   font-weight: var(--font-medium);
@@ -512,7 +512,7 @@ input {
 }
 .portfolio__popup__subtitle {
   font-size: var(--smaller-font-size);
-  margin-bottom: var(mb-0-25);
+  margin-bottom: var(--mb-0-25);
 }
 .portfolio__popup.open {
   opacity: 1;
