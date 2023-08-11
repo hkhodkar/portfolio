@@ -102,9 +102,9 @@ function navHightLighter() {
         .querySelector('.nav__menu a[href*=' + sectionId + ']')
         .classList.add('active-link');
     } else {
-      document
-        .querySelector('.nav__menu a[href*=' + sectionId + ']')
-        .classList.remove('active-link');
+        const item = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+        item?.classList.remove('active-link');
+
     }
   });
 }
