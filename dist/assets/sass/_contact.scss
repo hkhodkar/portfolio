@@ -1,0 +1,55 @@
+.contact {
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        justify-content: center;
+        grid-gap: 3rem;
+    }
+
+    &__card {
+        background-color: var(--box-color);
+        padding: 1rem;
+        border-radius: .5rem;
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 1.8rem;
+        color: var(--title-color);
+        margin-bottom: var(--mb-0-25);
+    }
+
+    &-title,
+    &-data {
+        font-size: var(--small-font-size);
+    }
+
+    &-title {
+        font-weight: var(--font-medium);
+    }
+
+    &-data {
+        display: block;
+        margin-bottom: var(--mb-0-75);
+    }
+
+    &__button {
+        color: var(--skin-color);
+        font-size: var(--small-font-size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: .25rem;
+        cursor: pointer;
+
+        &-icon {
+            font-size: 1rem;
+            transition: .3s;
+        }
+
+        &:hover &-icon {
+            transform: translateX(.25rem);
+        }
+    }
+}

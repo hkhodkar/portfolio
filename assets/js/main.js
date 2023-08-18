@@ -1,7 +1,7 @@
 /*========== show sidebar ===========*/
 const navMenu = document.getElementById('sidebar'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close');
 
 if(navToggle) {
   navToggle.addEventListener("click", () => {
@@ -15,26 +15,6 @@ if(navClose) {
   })
 }
 
-/*========== skills tab ===========*/
-const tabs = document.querySelectorAll('[data-target]');
-const tabsContent = document.querySelectorAll('[data-content]');
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const target = document.querySelector(tab.dataset.target);
-
-    tabsContent.forEach(tabsContent => {
-      tabsContent.classList.remove('skills__active');
-    });
-
-    target.classList.add('skills__active');
-
-    tabs.forEach(tab => {
-      tab.classList.remove('skills__active');
-    });
-
-    tab.classList.add('skills__active');
-  });
-});
 
 /*========== MIXITUP FILTER PORTFOLIO ===========*/
 let mixerPortfolio = mixitup('.work__container', {
@@ -102,8 +82,8 @@ function navHightLighter() {
         .querySelector('.nav__menu a[href*=' + sectionId + ']')
         .classList.add('active-link');
     } else {
-        const item = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
-        item?.classList.remove('active-link');
+      const item = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+      item?.classList.remove('active-link');
 
     }
   });

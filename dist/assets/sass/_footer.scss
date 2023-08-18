@@ -1,0 +1,28 @@
+.footer {
+    padding-top: 2rem;
+
+    &__container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.6rem;
+    }
+
+    &__bg {
+        background-color: var(--box-color);
+        padding: 3rem 0 3.5rem;
+    }
+
+
+    &__link {
+        transition: .4s;
+
+        &:hover {
+            color: var(--skin-color);
+        }
+    }
+
+    &__copy {
+        font-size: var(--small-font-size);
+        text-align: center;
+    }
+
+}

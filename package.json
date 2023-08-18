@@ -4,7 +4,7 @@
   "description": "Hatef Khodkar Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "sass ./assets/sass/main.scss assets/css/styles.css -w & live-server"
+    "start": "sass dist/assets/sass/main.scss assets/css/styles.css -w & live-server"
   },
   "repository": {
     "type": "git",

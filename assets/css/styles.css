@@ -195,7 +195,7 @@ input {
 }
 
 .home {
-  background: url("../img/home-bg.jpg");
+  background: url("/assets/img/home-bg.jpg");
   background-size: cover;
   height: 100vh;
   background-position: center center;
